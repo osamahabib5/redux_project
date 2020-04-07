@@ -7,18 +7,20 @@ import NewCakeContainer from './components/NewCakeContainer'
 import HooksCakeContainer from './components/HooksCakeContainer'
 import IceCreamContainer from './components/IceCreamContainer'
 import ItemContainer from './components/ItemContainer'
+import UserContainer from './components/UserContainer'
 //to provide store to react, a provider component is used
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         {/* prop cake is passed */}
-        <ItemContainer cake />
+        {/* <ItemContainer cake />
         <ItemContainer />
         <CakeContainer />
         <HooksCakeContainer />
         <IceCreamContainer />
-        <NewCakeContainer />
+        <NewCakeContainer /> */}
+        <UserContainer />
       </div>
     </Provider>
   );
