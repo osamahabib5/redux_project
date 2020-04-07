@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Provider } from 'react-redux';
-import store from './cakes/store'
+import store from './redux/store'
 import './App.css';
 import CakeContainer from './components/CakeContainer'
 
+//to provide store to react, a provider component is used
 function App() {
   return (
-    <Provider store={store} >
+    <Provider store={store}>
       <div className="App">
         <CakeContainer />
       </div>
